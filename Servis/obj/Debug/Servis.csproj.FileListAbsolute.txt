@@ -1,0 +1,35 @@
+D:\Program Servis\New folder\Servis\Servis\bin\Debug\Servis.exe.config
+D:\Program Servis\New folder\Servis\Servis\bin\Debug\Servis.exe
+D:\Program Servis\New folder\Servis\Servis\bin\Debug\Servis.pdb
+D:\Program Servis\New folder\Servis\Servis\bin\Debug\Newtonsoft.Json.dll
+D:\Program Servis\New folder\Servis\Servis\bin\Debug\Newtonsoft.Json.xml
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\MainWindow.g.cs
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\App.g.cs
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis_MarkupCompile.cache
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis_MarkupCompile.lref
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\MainWindow.baml
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.g.resources
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.Properties.Resources.resources
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.csproj.GenerateResource.cache
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.csproj.CopyComplete
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.exe
+D:\Program Servis\New folder\Servis\Servis\obj\Debug\Servis.pdb
+D:\Program Servis\Program\Servis\Servis\bin\Debug\Servis.exe.config
+D:\Program Servis\Program\Servis\Servis\bin\Debug\Servis.exe
+D:\Program Servis\Program\Servis\Servis\bin\Debug\Servis.pdb
+D:\Program Servis\Program\Servis\Servis\bin\Debug\Newtonsoft.Json.dll
+D:\Program Servis\Program\Servis\Servis\bin\Debug\Newtonsoft.Json.xml
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+D:\Program Servis\Program\Servis\Servis\obj\Debug\MainWindow.g.cs
+D:\Program Servis\Program\Servis\Servis\obj\Debug\App.g.cs
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis_MarkupCompile.cache
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis_MarkupCompile.lref
+D:\Program Servis\Program\Servis\Servis\obj\Debug\MainWindow.baml
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.g.resources
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.Properties.Resources.resources
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csproj.GenerateResource.cache
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csproj.CopyComplete
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.exe
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.pdb

@@ -1,0 +1,71 @@
+﻿<Window x:Class="Servis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Servis"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="{DynamicResource {x:Static SystemColors.InfoColorKey}}" Offset="1"/>
+				<GradientStop Color="#FF2E17F9"/>
+			</LinearGradientBrush>
+		</Grid.Background>
+
+		<DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="1174,27,0,0" VerticalAlignment="Top" Width="100"/>
+
+<!--		<Button Content="Dodaj spomenik" x:Name="dodajS_btn" HorizontalAlignment="Left" Margin="1188,27,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajS_btn_Click"/>
+		<Button Content="Dodaj tip" x:Name="dodajT_btn" HorizontalAlignment="Left" Margin="1188,66,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajT_btn_Click"/>
+		<Button Content="Dodaj etiketu" x:Name="dodajE_btn" HorizontalAlignment="Left" Margin="1188,105,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajE_btn_Click"/>
+		<Separator HorizontalAlignment="Left" Height="28" Margin="1188,144,0,0" VerticalAlignment="Top" Width="134"/>
+
+		<Button Content="Pregled spomenika" x:Name="spom_btn" HorizontalAlignment="Left" Margin="1188,176,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="Spom_btn_Click"/>
+		<Button Content="Pregled tipova" x:Name="tip_btn" HorizontalAlignment="Left" Margin="1188,215,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="Tip_btn_Click"/>
+		<Button Content="Pregled etiketa" x:Name="et_btn" HorizontalAlignment="Left" Margin="1188,254,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="Et_btn_Click"/>
+		<Separator HorizontalAlignment="Left" Height="28" Margin="1188,288,0,0" VerticalAlignment="Top" Width="134"/>
+		<TreeView Name="trvSpomenici" HorizontalAlignment="Left" Height="504" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" ItemsSource="{Binding tipovi}" SelectedItemChanged="TrvSpomenici_SelectedItemChanged" PreviewMouseLeftButtonDown="PrikazIkonice_PreviewMouseLeftButtonDown" MouseMove="PrikazIkonice_MouseMove">
+			<TreeView.Resources>
+				<HierarchicalDataTemplate DataType="{x:Type local:Korisnik}" ItemsSource="{Binding spomenici}">
+					<StackPanel Orientation="Horizontal">
+						<Image Margin="0,0,5,0">
+							<Image.Style>
+								<Style BasedOn="{StaticResource ResourceKey=SmallIcon}" TargetType="Image">
+									<Setter Property="Source" Value="{Binding Source={StaticResource ResourceKey=FolderClosed}, Mode=OneTime}"/>
+									<Style.Triggers>
+										<DataTrigger 
+                                                Binding="{Binding 
+                                                        RelativeSource={RelativeSource 
+                                                                AncestorType={x:Type TreeViewItem}}, 
+                                                                Path=IsExpanded}" 
+                                                Value="True">
+											<Setter Property="Source" Value="{Binding Source={StaticResource ResourceKey=FolderOpen}, Mode=OneTime}"/>
+										</DataTrigger>
+									</Style.Triggers>
+								</Style>
+							</Image.Style>
+						</Image>
+						<TextBlock Text="{Binding Naziv}"/>
+
+					</StackPanel>
+				</HierarchicalDataTemplate>
+				<DataTemplate DataType="{x:Type local:Spomenik}">
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="{Binding Oznaka}" FontWeight="Bold"/>
+						<TextBlock Text=" ("/>
+						<TextBlock Text="{Binding Naziv}"/>
+						<TextBlock Text=" "/>
+						<TextBlock Text="{Binding Opis}"/>
+						<TextBlock Text=")"/>
+					</StackPanel>
+				</DataTemplate>
+			</TreeView.Resources>
+		</TreeView>
+		<!-->
+		<Separator HorizontalAlignment="Left" Height="28" Margin="1188,382,0,0" VerticalAlignment="Top" Width="134"/>
+	</Grid>
+</Window>
