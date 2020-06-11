@@ -13,7 +13,6 @@ namespace Servis.Model
 		private string ime = "";
 		private string prezime = "";
         private string brojTelefona = "";
-	private DateTime datum = DateTime.Today;
         public event PropertyChangedEventHandler PropertyChanged;
 
         public int Id
@@ -84,13 +83,12 @@ namespace Servis.Model
 
         public Korisnik() { }
 
-        public Korisnik(int id, string ime, string prezime, string brojTelefona, DateTime datum)
+        public Korisnik(int id, string ime, string prezime, string brojTelefonaz)
         {
             this.id = id;
             this.ime = ime;
             this.prezime = prezime;
-            this.brojTelefona = brojTelefona;
-            this.datum = datum;
+            this.brojTelefona = brojTelefonaz;
         }
 
         public void setAll(Korisnik k)
@@ -99,7 +97,6 @@ namespace Servis.Model
             ime = k.ime;
             prezime = k.prezime;
             brojTelefona = k.brojTelefona;
-            datum = k.datum;
         }
             
 

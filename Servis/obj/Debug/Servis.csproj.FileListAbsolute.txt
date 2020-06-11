@@ -20,7 +20,6 @@ D:\Program Servis\Program\Servis\Servis\bin\Debug\Servis.exe
 D:\Program Servis\Program\Servis\Servis\bin\Debug\Servis.pdb
 D:\Program Servis\Program\Servis\Servis\bin\Debug\Newtonsoft.Json.dll
 D:\Program Servis\Program\Servis\Servis\bin\Debug\Newtonsoft.Json.xml
-D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
 D:\Program Servis\Program\Servis\Servis\obj\Debug\MainWindow.g.cs
 D:\Program Servis\Program\Servis\Servis\obj\Debug\App.g.cs
 D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis_MarkupCompile.cache
@@ -33,3 +32,9 @@ D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csproj.CoreCompileInput
 D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.csproj.CopyComplete
 D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.exe
 D:\Program Servis\Program\Servis\Servis\obj\Debug\Servis.pdb
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Dijalozi\korisnicixaml.g.cs
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Dijalozi\korisnicixaml.baml
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Dijalozi\vozila.g.cs
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Dijalozi\vozila.baml
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Dijalozi\odabriTipa.g.cs
+D:\Program Servis\Program\Servis\Servis\obj\Debug\Dijalozi\odabriTipa.baml

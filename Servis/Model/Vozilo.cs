@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Markup;
 
 namespace Servis.Model
 {
@@ -14,6 +16,7 @@ namespace Servis.Model
 		private String regBroj = "";
 		private String brojSasije = "";
 
+	
 
 		public string MarkaVozila
 		{
@@ -73,8 +76,18 @@ namespace Servis.Model
 
 		public Vozilo() { }
 
+		public Vozilo(string markaVozila, string modelVozila, string regBroj, string brojSasije)
+        {
+			
+			this.markaVozila = markaVozila;
+			this.modelVozila = modelVozila;
+			this.regBroj = regBroj;
+			this.brojSasije = brojSasije;
+        }
+
 		public void setAll(Vozilo v)
 		{
+			
 			markaVozila = v.markaVozila;
 			modelVozila = v.modelVozila;
 			regBroj = v.regBroj;

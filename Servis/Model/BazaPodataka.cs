@@ -147,7 +147,7 @@ namespace Servis.Model
         {
             foreach (Vozilo v1 in vozilo)
             {
-                if (v1.RegBroj == v.RegBroj)
+                if (v1.RegBroj.Equals(v.RegBroj) )
                 {
 
                     return false;

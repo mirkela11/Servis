@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition/>
-		</Grid.ColumnDefinitions>
-		<Grid.Background>
-			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-				<GradientStop Color="{DynamicResource {x:Static SystemColors.InfoColorKey}}" Offset="1"/>
-				<GradientStop Color="#FF2E17F9"/>
-			</LinearGradientBrush>
-		</Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="{DynamicResource {x:Static SystemColors.InfoColorKey}}" Offset="1"/>
+                <GradientStop Color="#FF2E17F9"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
-		<DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="1174,27,0,0" VerticalAlignment="Top" Width="100"/>
+        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="1174,27,0,0" VerticalAlignment="Top" Width="100"/>
 
-<!--		<Button Content="Dodaj spomenik" x:Name="dodajS_btn" HorizontalAlignment="Left" Margin="1188,27,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajS_btn_Click"/>
+        <!--		<Button Content="Dodaj spomenik" x:Name="dodajS_btn" HorizontalAlignment="Left" Margin="1188,27,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajS_btn_Click"/>
 		<Button Content="Dodaj tip" x:Name="dodajT_btn" HorizontalAlignment="Left" Margin="1188,66,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajT_btn_Click"/>
 		<Button Content="Dodaj etiketu" x:Name="dodajE_btn" HorizontalAlignment="Left" Margin="1188,105,0,0" VerticalAlignment="Top" Width="134" Height="34" Click="DodajE_btn_Click"/>
 		<Separator HorizontalAlignment="Left" Height="28" Margin="1188,144,0,0" VerticalAlignment="Top" Width="134"/>
@@ -66,6 +66,8 @@
 			</TreeView.Resources>
 		</TreeView>
 		<!-->
-		<Separator HorizontalAlignment="Left" Height="28" Margin="1188,382,0,0" VerticalAlignment="Top" Width="134"/>
-	</Grid>
+        <Separator HorizontalAlignment="Left" Height="28" Margin="1188,382,0,0" VerticalAlignment="Top" Width="134"/>
+        <Button Content="Dodaj korisnika" HorizontalAlignment="Left" Margin="684,12,0,0" VerticalAlignment="Top" Width="93" Click="DodajK_btn_Click"/>
+        <Button Content="Dodaj vozilo" HorizontalAlignment="Left" Margin="684,46,0,0" VerticalAlignment="Top" Width="93" Click="DodajV_btn_Click"/>
+    </Grid>
 </Window>
