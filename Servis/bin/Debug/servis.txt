@@ -1,0 +1,1 @@
+[{"Korisnik":{"Id":1,"Ime":"Nemanja","Prezime":"Mirkovic","BrojTelefona":"03203"},"Vozilo":{"Korisnik":{"Id":1,"Ime":"Nemanja","Prezime":"Mirkovic","BrojTelefona":"03203"},"MarkaVozila":"sda","ModelVozila":"dsa","RegBroj":"sda","BrojSasije":"sad"},"MaliServis":null,"PredjenaKilometraza":111}]

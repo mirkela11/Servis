@@ -1,0 +1,38 @@
+﻿<Window x:Class="Servis.Dijalozi.odabriTipa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Servis.Dijalozi"
+        mc:Ignorable="d"
+         Title="Odabir tipa" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=Korisnici}" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,0,-0.4,45.4">
+            <DataGrid.Background>
+
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.InfoColorKey}}" Offset="1"/>
+                    <GradientStop Color="#FF2E17F9"/>
+                </LinearGradientBrush>
+
+            </DataGrid.Background>
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="2*" />
+                <DataGridTextColumn Header="Ime" Binding="{Binding Ime}" Width="4*"/>
+                <DataGridTextColumn Header="Prezime" Binding="{Binding Prezime}" Width="3*">
+
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button Content="Izaberi" x:Name="izaberi" HorizontalAlignment="Left" Margin="176,341,0,0" VerticalAlignment="Top" Width="75" Click="Izaberi_Click_1"/>
+        <Button Content="Odustani" HorizontalAlignment="Left" Margin="285,341,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>

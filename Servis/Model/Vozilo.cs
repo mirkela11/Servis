@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Servis.Dijalozi;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -15,9 +16,20 @@ namespace Servis.Model
 		private String modelVozila = "";
 		private String regBroj = "";
 		private String brojSasije = "";
+		private Korisnik korisnik = new Korisnik();
 
-	
+		public Korisnik Korisnik
 
+        {
+			get { return korisnik; }
+			set {
+				if (value != korisnik) {
+					korisnik = value;
+					OnPropertyChanged("Korisnik");
+				}
+			}
+        }
+		
 		public string MarkaVozila
 		{
 			get
@@ -74,15 +86,18 @@ namespace Servis.Model
 			}
 		}
 
-		public Vozilo() { }
+		public Vozilo() {
+			korisnik = new Korisnik();
+		}
 
-		public Vozilo(string markaVozila, string modelVozila, string regBroj, string brojSasije)
+		public Vozilo(String markaVozila, String modelVozila, String regBroj, String brojSasije, Korisnik k)
         {
 			
 			this.markaVozila = markaVozila;
 			this.modelVozila = modelVozila;
 			this.regBroj = regBroj;
 			this.brojSasije = brojSasije;
+			this.korisnik = k;
         }
 
 		public void setAll(Vozilo v)
@@ -92,6 +107,8 @@ namespace Servis.Model
 			modelVozila = v.modelVozila;
 			regBroj = v.regBroj;
 			brojSasije = v.brojSasije;
+			korisnik = v.korisnik;
+
 		}
 
 

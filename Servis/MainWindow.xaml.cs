@@ -223,6 +223,24 @@ namespace Servis
                 */
             }
         }
+
+        private void DodajS_btn_Click(object sender, RoutedEventArgs e)
+        {
+            var s = new servis();
+            s.ShowDialog();
+        }
+
+        private void PregledKorisnikaClick(object sender, RoutedEventArgs e)
+        {
+            var s = new pregledKorisnika();
+            s.ShowDialog();
+        }
+
+        private void PregledVozilaClick(object sender, RoutedEventArgs e)
+        {
+            var s = new pregledVozila();
+            s.ShowDialog();
+        }
     }
 
 }

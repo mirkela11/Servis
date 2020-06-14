@@ -58,11 +58,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Dijalozi\izmeniKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dijalozi\korisnicixaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Dijalozi\odabriTipa.xaml">
+    <Page Include="Dijalozi\maliServis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dijalozi\odabirKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dijalozi\odabirVozila.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dijalozi\pregledKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dijalozi\pregledVozila.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dijalozi\servis.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,11 +102,29 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Dijalozi\izmeniKorisnika.xaml.cs">
+      <DependentUpon>izmeniKorisnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dijalozi\korisnicixaml.xaml.cs">
       <DependentUpon>korisnicixaml.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dijalozi\odabriTipa.xaml.cs">
-      <DependentUpon>odabriTipa.xaml</DependentUpon>
+    <Compile Include="Dijalozi\maliServis.xaml.cs">
+      <DependentUpon>maliServis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dijalozi\odabirKorisnika.xaml.cs">
+      <DependentUpon>odabirKorisnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dijalozi\odabirVozila.xaml.cs">
+      <DependentUpon>odabirVozila.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dijalozi\pregledKorisnika.xaml.cs">
+      <DependentUpon>pregledKorisnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dijalozi\pregledVozila.xaml.cs">
+      <DependentUpon>pregledVozila.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dijalozi\servis.xaml.cs">
+      <DependentUpon>servis.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dijalozi\vozila.xaml.cs">
       <DependentUpon>vozila.xaml</DependentUpon>
@@ -95,6 +137,8 @@
   <ItemGroup>
     <Compile Include="Model\BazaPodataka.cs" />
     <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\MaliServis.cs" />
+    <Compile Include="Model\Servis.cs" />
     <Compile Include="Model\Vozilo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

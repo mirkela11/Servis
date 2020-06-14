@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Data.Odbc;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,33 +17,47 @@ using System.Windows.Shapes;
 namespace Servis.Dijalozi
 {
     /// <summary>
-    /// Interaction logic for odabriTipa.xaml
+    /// Interaction logic for odabirVozila.xaml
     /// </summary>
-    public partial class odabriTipa : Window
+    public partial class odabirVozila : Window
     {
         private BazaPodataka baza;
+        private Korisnik korisnik;
+        private Vozilo vozilo;
 
-        private ObservableCollection<Model.Korisnik> korisnici;
+        private odabriTipa ot;
 
-        public ObservableCollection<Model.Korisnik> Korisnici
+        private ObservableCollection<Model.Vozilo> vozila;
+        public ObservableCollection<Model.Vozilo> Vozila
         {
-            get { return korisnici; }
-            set { korisnici = value; }
+            get
+            {
+                return vozila;
+            }
+            set
+            {
+                vozila = value;
+            }
         }
-       
-        private Korisnik odabran;
 
-        public Korisnik Odabran
+        private Vozilo odabran;
+        public Vozilo Odabran
         {
             get { return odabran; }
-            set { odabran = value; }
+            set
+            {
+                odabran = value;
+            }
         }
 
-        public odabriTipa()
+
+
+
+        public odabirVozila()
         {
             baza = new BazaPodataka();
-            baza.ucitajKorisnike();
-            korisnici = baza.Korisnici;
+            baza.ucitajVozila();
+            vozila = baza.Vozila;
             InitializeComponent();
             this.DataContext = this;
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
@@ -57,8 +70,9 @@ namespace Servis.Dijalozi
 
         private void Izaberi_Click_1(object sender, RoutedEventArgs e)
         {
+          
             if (dgrMain.SelectedItem != null)
-                odabran = (Korisnik)dgrMain.SelectedItem;
+                odabran = (Vozilo)dgrMain.SelectedItem;
             else
                 odabran = null;
             this.Close();

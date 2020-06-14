@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Program Servis\Program\Servis\Servis\App.xaml
-4849737247
+10-732908261
 
-12-1869162443
+20-783920421
 14-1353889085
-Dijalozi\korisnicixaml.xaml;Dijalozi\odabriTipa.xaml;Dijalozi\vozila.xaml;MainWindow.xaml;
+Dijalozi\izmeniKorisnika.xaml;Dijalozi\korisnicixaml.xaml;Dijalozi\maliServis.xaml;Dijalozi\odabirKorisnika.xaml;Dijalozi\odabirVozila.xaml;Dijalozi\pregledKorisnika.xaml;Dijalozi\pregledVozila.xaml;Dijalozi\servis.xaml;Dijalozi\vozila.xaml;MainWindow.xaml;
 
 True
 

@@ -49,10 +49,25 @@ namespace Servis.Dijalozi
             set { brojSasije = value; }
         }
 
+        private Korisnik korisnik;
+
+        public Korisnik Korisnik
+        {
+            get { return korisnik; }
+            set
+            {
+                if (value != korisnik)
+                {
+                    korisnik = value;
+                }
+            }
+        }
+
         private BazaPodataka baza;
         public vozila()
         {
             baza = new BazaPodataka();
+            korisnik = new Korisnik();
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             this.DataContext = this;
@@ -65,11 +80,12 @@ namespace Servis.Dijalozi
 
         private void Sacuvaj_Click_1(object sender, RoutedEventArgs e)
         {
-            Vozilo v = new Vozilo(markaVozila, modelVozila, regBroj, brojSasije);
+            Vozilo v = new Vozilo(markaVozila, modelVozila, regBroj, brojSasije,korisnik);
             bool passed = baza.novoVozilo(v);
             if (passed)
             {
                 baza.sacuvajVozilo();
+                baza.sacuvajVoziloId();
                 System.Windows.MessageBox.Show("Uspesno ste dodali novo vozilo");
                 this.Close();
             }
@@ -78,6 +94,39 @@ namespace Servis.Dijalozi
                 System.Windows.MessageBox.Show("Vozilo sa tim registarskim oznakama vec postoji");
             }
         }
+
+        private string oznakaKorisnika;
+
+        public string OznakaKorisnika
+        {
+            get { return oznakaKorisnika; }
+            set
+            {
+                if (value != oznakaKorisnika)
+                {
+                    oznakaKorisnika = value;
+                    
+                }
+            }
+        }
+
+        
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            odabriTipa s = new odabriTipa();
+            s.ShowDialog();
+
+            Korisnik temp = s.Odabran;
+            if (temp != null)
+            {
+                korisnik = temp;
+                oznakaKorisnika = korisnik.Ime;
+                tip_textBox.Text = oznakaKorisnika;
+            }
+        }
+
+
 
     }
 }

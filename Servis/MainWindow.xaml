@@ -69,5 +69,8 @@
         <Separator HorizontalAlignment="Left" Height="28" Margin="1188,382,0,0" VerticalAlignment="Top" Width="134"/>
         <Button Content="Dodaj korisnika" HorizontalAlignment="Left" Margin="684,12,0,0" VerticalAlignment="Top" Width="93" Click="DodajK_btn_Click"/>
         <Button Content="Dodaj vozilo" HorizontalAlignment="Left" Margin="684,46,0,0" VerticalAlignment="Top" Width="93" Click="DodajV_btn_Click"/>
+        <Button Content="Dodaj servis" HorizontalAlignment="Left" Margin="684,89,0,0" VerticalAlignment="Top" Width="93" Click="DodajS_btn_Click"/>
+        <Button Content="Pregled korisnika" HorizontalAlignment="Left" Margin="684,150,0,0" VerticalAlignment="Top" Width="93" Click="PregledKorisnikaClick"/>
+        <Button Content="Pregled vozila" HorizontalAlignment="Left" Margin="684,190,0,0" VerticalAlignment="Top" Width="93" Click="PregledVozilaClick"/>
     </Grid>
 </Window>

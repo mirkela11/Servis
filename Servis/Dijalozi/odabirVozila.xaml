@@ -1,17 +1,17 @@
-﻿<Window x:Class="Servis.Dijalozi.odabriTipa"
+﻿<Window x:Class="Servis.Dijalozi.odabirVozila"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Servis.Dijalozi"
         mc:Ignorable="d"
-         Title="Odabir tipa" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="odabirVozila" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=Tipovi}" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,0,-0.4,45.4">
+        <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=Vozila}" IsReadOnly="True" AutoGenerateColumns="False" Margin="0,0,-0.4,45.4">
             <DataGrid.Background>
 
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -22,9 +22,9 @@
             </DataGrid.Background>
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="2*" />
-                <DataGridTextColumn Header="Ime" Binding="{Binding Ime}" Width="4*"/>
-                <DataGridTextColumn Header="Prezime" Binding="{Binding Prezime}" Width="3*">
+                <DataGridTextColumn Header="Marka vozila" Binding="{Binding MarkaVozila}" Width="2*" />
+                <DataGridTextColumn Header="Model vozila" Binding="{Binding ModelVozila}" Width="4*"/>
+                <DataGridTextColumn Header="Registarski broj" Binding="{Binding RegBroj}" Width="3*">
 
                 </DataGridTextColumn>
             </DataGrid.Columns>
